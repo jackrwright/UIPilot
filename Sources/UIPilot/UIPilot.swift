@@ -186,9 +186,6 @@ public struct UIPilotHost<T: Equatable>: View {
         NavigationView {
             state.content
         }
-#if !os(macOS)
-        .navigationViewStyle(.stack)
-#endif
         .environmentObject(pilot)
     }
 }
